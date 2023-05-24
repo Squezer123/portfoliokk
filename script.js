@@ -1,4 +1,6 @@
-let tile = document.getElementsByClassName(tile);
-let width = tile.offsetWidth
-let box = document.getElementsByClassName(moving-box)
-objec.addEventListener("load", myScript)
+let tile = document.getElementsByClassName("tile");
+let box = document.getElementsByClassName("moving-block")
+box.addEventListener("load", szerokosc())
+function szerokosc(){
+    box.style.width = tile[0].offsetWidth;
+}
