@@ -78,7 +78,7 @@ margin-left: 30px;
 @keyframes slide {
 
 0% {
-  left: -5%;
+  left: 0%;
   background: red;
 }
 
@@ -88,16 +88,16 @@ margin-left: 30px;
 
 }
 50%{
-  left: 52%;
+  left: 53%;
   background: yellow;
 
 }
 75%{
-  left: 75%;
+  left: 76%;
   background: purple;
 }
 100%{
-  left: 95%;
+  left: 96%;
   background: purple;
   transform: translatex(-100%);
   
