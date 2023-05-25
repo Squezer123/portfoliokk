@@ -1,76 +1,206 @@
 body{
-    background: black !important;
-    margin: 0;
-    padding: 0;
+  background: black !important;
+  margin: 0;
+  padding: 0;
 }
 header
 {
-    color: white;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    width: 100%;
-    margin: 0px;
-    padding: 50px;
-    height: 150px;
+  color: white;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  width: 100%;
+  margin: 0px;
+  padding: 50px;
+  height: 150px;
 }
 
 main{
- padding-left: 50px;  
- position: relative; 
+position: relative; 
+width: 100%;
 }
 
-.tile1{
-    height: 400px;
-    
-    border-radius: 15px;
-    padding: 20px;
+.tile{
+  padding: 20px;
+  color: black;
 }
+.tile1 {
+color: white !important;
+animation-delay: 1.5s;
+animation-fill-mode: forwards;
+}
+.tile2 {
+animation: 5s colorSlide2;
+animation-delay: 1.5s;
+animation-fill-mode: forwards;
+}
+.tile3 {
+animation: 5s colorSlide3;
+animation-delay: 1.5s;
+animation-fill-mode: forwards;
+}
+.tile4 {
+animation: 5s colorSlide4;
+animation-delay: 1.5s;
+animation-fill-mode: forwards;
+}
+.tile5 {
+  animation: 5s colorSlide5;
+  animation-delay: 1.5s;
+  animation-fill-mode: forwards;
+  }
 .col{
-    height: 250px;
+  height: 250px;
+}
+.container{
+  width: 100%;
 }
 .d-flex {
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
+display: flex;
+align-items: center;
+justify-content: space-between;
 }
 
 
 .moving-block {
-    border-radius: 15px;
-	position: absolute;
-	left: 0;
-	top: 0;
-	height: 400px;
-	width: 210px !important;
-	background-color: rgb(247, 37, 37);
-	z-index:-1;
-	animation: 3s slide;
-  animation-delay: 1.5s;
-  margin-left: 50px;
+  border-radius: 15px;
+position: absolute;
+left: 0;
+top: 0;
+height: 400px;
+width: 210px !important;
+background-color: rgb(247, 37, 37);
+z-index:-1;
+animation: 5s slide;
+animation-delay: 0.5s;
+animation-fill-mode: forwards;
+margin-left: 30px;
 }
 
 @keyframes slide {
 
-  0% {
-    left: 0%;
-    background: red;
-  }
+0% {
+  left: -5%;
+  background: red;
+}
 
-  25%{
-    left: 25%;
-    background: blue;
+25%{
+  left: 26%;
+  background: blue;
 
-  }
-  50%{
-    left: 50%;
-    background: yellow;
+}
+50%{
+  left: 52%;
+  background: yellow;
 
-  }
-  75%{
-    left: 75%;
-    background: purple;
+}
+75%{
+  left: 75%;
+  background: purple;
+}
+100%{
+  left: 95%;
+  background: purple;
+  transform: translatex(-100%);
+  
+}
 
-    transform: translateX(-100%);
-  }
 
 }
 
+@keyframes colorSlide1 {
+
+0% {
+  color: white;
+}
+25%{
+  color: white;
+}
+50%{
+  color: white;
+
+}
+75%{
+  color: white;
+}
+100%{
+  color: white;
+}
+}
+@keyframes colorSlide2 {
+
+0% {
+  color: black;
+}
+25%{
+  color: white;
+}
+50%{
+  color: white;
+
+}
+75%{
+  color: white;
+}
+100%{
+  color: white;
+}
+}
+
+@keyframes colorSlide3 {
+
+0% {
+  color: black;
+}
+25%{
+  color: black;
+}
+50%{
+  color: white;
+
+}
+75%{
+  color: white;
+}
+100%{
+  color: white;
+}
+}
+
+@keyframes colorSlide4 {
+
+0% {
+  color: black;
+}
+25%{
+  color: black;
+}
+50%{
+  color: black;
+
+}
+75%{
+  color: white;
+}
+100%{
+  color: white;
+}
+}
+
+@keyframes colorSlide5 {
+
+  0% {
+    color: black;
+  }
+  25%{
+    color: black;
+  }
+  50%{
+    color: black;
+  
+  }
+  75%{
+    color: black;
+  }
+  100%{
+    color: white;
+  }
+  }
