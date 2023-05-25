@@ -14,12 +14,13 @@ header
 }
 
 main{
- padding-left: 50px;   
+ padding-left: 50px;  
+ position: relative; 
 }
 
-.tile{
+.tile1{
     height: 400px;
-    background-color: rgb(247, 37, 37);
+    
     border-radius: 15px;
     padding: 20px;
 }
@@ -39,18 +40,37 @@ main{
 	left: 0;
 	top: 0;
 	height: 400px;
-	width: 250px;
+	width: 210px !important;
 	background-color: rgb(247, 37, 37);
-	z-index:1;
-	animation: 3s linear 0s slide;
-  
+	z-index:-1;
+	animation: 3s slide;
+  animation-delay: 1.5s;
+  margin-left: 50px;
 }
 
 @keyframes slide {
-  from { left: 5%; }
-	to {
-		left: 100%;
-    transform: translateX(-100%);
-    background: blue;
+
+  0% {
+    left: 0%;
+    background: red;
   }
+
+  25%{
+    left: 25%;
+    background: blue;
+
+  }
+  50%{
+    left: 50%;
+    background: yellow;
+
+  }
+  75%{
+    left: 75%;
+    background: purple;
+
+    transform: translateX(-100%);
+  }
+
 }
+
