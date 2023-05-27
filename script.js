@@ -7,3 +7,5 @@ function ustawienie(){
     movingbox[0].style.width = tilewidth;
 }
 
+
+ 
