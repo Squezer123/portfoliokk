@@ -1,4 +1,9 @@
-let tile = document.getElementsByClassName("tile");
-let box = document.getElementsByClassName("moving-block");
-let width = tile[0].offsetWidth;
-/*box.addEventListener("load", alert("Portfolio jest przystosowane do oglądania na monitorze full hd (1920x1080)"));
+let tilewidth = document.getElementsByClassName('col')[0].offsetWidth;
+let movingbox = document.getElementsByClassName('moving-block');
+
+movingbox[0].addEventListener("load", ustawienie());
+movingbox[0].addEventListener("resize", ustawienie());
+function ustawienie(){
+    movingbox[0].style.width = tilewidth;
+}
+
