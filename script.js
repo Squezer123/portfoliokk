@@ -16,3 +16,11 @@ function scrollup(){
     header[0].scrollIntoView({behavior: "smooth"});
 }
 
+
+let container = document.getElementsByClassName('container-fluid');
+
+
+function displayonload(){
+    
+}
+
