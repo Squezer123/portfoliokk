@@ -7,13 +7,12 @@ function scrolldown(){
     aim[0].scrollIntoView({behavior: "smooth"});
 }
 
-let fullheight = document.getElementsByTagName('html')[0].offsetHeight;
-let headerheight = document.getElementsByTagName('header')[0].offsetHeight;
-let buttonsheight = document.getElementsByClassName('container-fluid')[0].offsetHeight
-let filler = document.getElementsByClassName('filler');
+let header = document.getElementsByTagName('header');
+let buttonup = document.getElementsByClassName('myBtn');
 
-filler[0].addEventListener('load',()=> setheight());
+buttonup[0].addEventListener("click", () => scrollup());
 
-function setheight(){
-    filler[0].style.height;
+function scrollup(){
+    header[0].scrollIntoView({behavior: "smooth"});
 }
+
