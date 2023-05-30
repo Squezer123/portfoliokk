@@ -17,10 +17,12 @@ function scrollup(){
 }
 
 
-let container = document.getElementsByClassName('container-fluid');
-
+let container = document.getElementsByClassName('disabler');
+let loading = document.getElementsByTagName('svg');
 
 function displayonload(){
-    
+    loading[0].style.display = "none";
+    container[0].style.display = "block";
 }
 
+loading[0].addEventListener('animationend', ()=> displayonload());
