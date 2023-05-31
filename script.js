@@ -41,3 +41,22 @@ function displayonload(){
 }
 
 loading[0].addEventListener('animationend', ()=> displayonload());
+
+let sidebuttons = document.getElementsByClassName('sidebutton');
+let kuniakzjeb = document.getElementsByClassName('kuniakzjeb');
+
+
+button[0].addEventListener("click", () => scrolldown());
+button[1].addEventListener("click", () => scrolldowns());
+button[2].addEventListener("click", () => scrolldownp());
+button[3].addEventListener("click", () => scrolldownc());
+
+function displayonload(i){
+
+    switch(i){
+        case
+
+    }
+        
+    
+}
