@@ -108,8 +108,8 @@ button:active{
 }
 .filler{
 
-  height: 66vh;
-
+  height: 63vh;
+border: 1px white solid;
 }
 .myBtn {
   
@@ -182,4 +182,22 @@ svg {
 
 .disabler{
   display: none;
+}
+
+.aboutme{
+  border: 1px solid white;
+  height: 100vh;
+}
+
+.skills{
+  border: 1px solid white;
+  height: 100vh;
+}
+.projects{
+  border: 1px solid white;
+  height: 100vh;
+}
+.contact{
+  border: 1px solid white;
+  height: 100vh;
 }
