@@ -43,7 +43,7 @@ function displayonload(){
 loading[0].addEventListener('animationend', ()=> displayonload());
 
 let sidebuttons = document.getElementsByClassName('sidebutton');
-let kuniakzjeb = document.getElementsByClassName('kuniakzjeb');
+
 
 
 button[0].addEventListener("click", () => scrolldown());
